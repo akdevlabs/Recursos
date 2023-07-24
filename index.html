@@ -3,23 +3,38 @@
     <head>
        
         <title>Recursos</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE-edge">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0 shrink-to-fit=no">
         <link rel="icon" type="image/png" sizes="32x32" href="logo-O.png">
         <link rel="icon" type="image/png" sizes="16x16" href="logo-O.png">
         <link rel="stylesheet" href="Recursos.css">
-        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     <body>
         <section class="dashbord" >
+         
             <div class="banner">
                 <div>
                     <img src="logo2.jpg" class="logo"> 
                 </div>
-                <div>
-                    <a class="home" href="https://main--sage-lily-3b571d.netlify.app/">Mi Portal</a>
-                </div>
-            </div>
 
+            <nav> 
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                    <ul>
+                        <li><a class="home" href="https://main--sage-lily-3b571d.netlify.app/">Mi Portal</a></li>
+                    </ul>
+                    
+                </div>
+                <i class="fa fa-bars" id="bars" onclick="showMenu()"></i>  
+            </nav>
+            
+            </div>
+            
+          
             <div class="images-links">
                 <a id="link" href="#"> <img id="show"  src="#" class="show"></a>
                 <a id="link1" href="#"><img id="show2" src="#" class="show"></a>
@@ -36,13 +51,24 @@
     
         </section>
       
+        <script>
+            var navLinks= document.getElementById("navLinks");
 
+                function showMenu(){
+                    navLinks.style.right = "0";
+                }
+                function hideMenu(){
+                    navLinks.style.right="-200px";
+                }
+        </script> 
+           
    
   
  
   
   <script src="Recursos.js" type="module"></script>
-  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   
     </body>
 </html>
